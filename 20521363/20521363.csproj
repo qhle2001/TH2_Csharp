@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55A41A78-A31E-47D6-9E5D-258990BBABDA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_20521363</RootNamespace>
+    <AssemblyName>20521363</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Charge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charge.Designer.cs">
+      <DependentUpon>Charge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Danhmuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Danhmuc.Designer.cs">
+      <DependentUpon>Danhmuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatHang.Designer.cs">
+      <DependentUpon>DatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="detail_DH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="detail_DH.Designer.cs">
+      <DependentUpon>detail_DH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="detail_in_filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="detail_in_filter.Designer.cs">
+      <DependentUpon>detail_in_filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filter_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filter_detail.Designer.cs">
+      <DependentUpon>filter_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="history.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="history.Designer.cs">
+      <DependentUpon>history.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\product.cs" />
+    <Compile Include="Model\quantity_product_in_cart.cs" />
+    <Compile Include="Model\take_datetime.cs" />
+    <Compile Include="order lookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order lookup.Designer.cs">
+      <DependentUpon>order lookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="order_lookup_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="order_lookup_details.Designer.cs">
+      <DependentUpon>order_lookup_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="product details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="product details.Designer.cs">
+      <DependentUpon>product details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="product_details_userdanhmuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="product_details_userdanhmuc.Designer.cs">
+      <DependentUpon>product_details_userdanhmuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucfilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucfilter.Designer.cs">
+      <DependentUpon>ucfilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCart.Designer.cs">
+      <DependentUpon>UserCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDanhmuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserDanhmuc.Designer.cs">
+      <DependentUpon>UserDanhmuc.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Charge.resx">
+      <DependentUpon>Charge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danhmuc.resx">
+      <DependentUpon>Danhmuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatHang.resx">
+      <DependentUpon>DatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="detail_DH.resx">
+      <DependentUpon>detail_DH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="detail_in_filter.resx">
+      <DependentUpon>detail_in_filter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filter_detail.resx">
+      <DependentUpon>filter_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="history.resx">
+      <DependentUpon>history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order lookup.resx">
+      <DependentUpon>order lookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="order_lookup_details.resx">
+      <DependentUpon>order_lookup_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="product details.resx">
+      <DependentUpon>product details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="product_details_userdanhmuc.resx">
+      <DependentUpon>product_details_userdanhmuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ucfilter.resx">
+      <DependentUpon>ucfilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCart.resx">
+      <DependentUpon>UserCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDanhmuc.resx">
+      <DependentUpon>UserDanhmuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip14_plus_trang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip14_plus_do.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip14_plus_den.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip14_plus_xanhduong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip14_pro_tim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip14_pro_den.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip14_pro_bac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip14_pro_vang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip14_promax_vang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip14_promax_den.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip14_promax_bac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip14_promax_tim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip12_promax_vang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip12_promax_bac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip12_promax_xam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip12_promax_xanh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip12_trang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip12_do.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip12_den.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip12_tim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip12_pro_xanhduong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip12_pro_bac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip12_pro_xam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip12_pro_vang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip13_pro_xanh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip13_pro_xam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip13_pro_vang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip13_pro_bac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip13_promax_xanhla.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip13_promax_xam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip13_promax_bac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip13_promax_vang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip13_promax_xanh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip13_xanh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip13_hong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip13_den.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip13_do.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip13_trang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_note_11_4gb_128gb_xam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_note_11_4gb_64gb_xanhduongdam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_note_11_4gb_64gb_xam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_note_11_4gb_64gb_xanhduongnhat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_note_11_4gb_128gb_xanhduongnhat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_note_11_4gb_128gb_xanhduongdam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_note_10c_4gb_128gb_xanhla.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_note_10c_4gb_128gb_xam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_note_10c_4gb_128gb_xanhduong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_9a_2gb_32gb_xanhduong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_9a_2gb_32gb_xanhla.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_note11pro_5gb_8gb_128gb_xam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_note_9c_4gb_128gb_tim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_note_9c_4gb_128gb_xam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_note_9c_4gb_128gb_cam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_note_11s_8gb_128gb_xam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xiaomi_redmi_note_11s_8gb_128gb_trang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_ultra_den.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_ultra_xam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_galaxy_a03s_64gb_xanh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_galaxy_a03s_64gb_trang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_galaxy_a03s_64gb_den.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_galaxy_a04s_4gb_64gb_den.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_galaxy_a04s_4gb_64gb_dong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_galaxy_a04s_4gb_64gb_xanh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_a53_5g_128gb_trang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_a53_5g_128gb_cam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_a53_5g_128gb_den.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_a53_5g_128gb_xanh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_s22_8gb_256gb_den.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_s22_8gb_128gb_hong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_s22_8gb_256gb_trang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_a73_8gb_128gb_xam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_a73_8gb_128gb_trang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_a73_8gb_128gb_xanh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_galaxy_a03_32gb_do.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_galaxy_a03_32gb_den.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\samsung_galaxy_a03_32gb_xanh.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
